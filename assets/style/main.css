@@ -17,9 +17,7 @@
   *{
     font-family:'Janna-Regular' ; 
   }
-  .container {
-    width: 1232px !important; /* Use !important to ensure it overrides Bootstrap */
-  }
+ 
   .main_title {
     font-family: "Janna-Bold";
     font-size: 60px;

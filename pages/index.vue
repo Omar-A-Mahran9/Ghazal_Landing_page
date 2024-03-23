@@ -1,13 +1,13 @@
 <template>
   <div style="direction: rtl">
     <div class="hero_section"></div>
-    <div class="main_section">
+    <div class="main_section container">
       <AppNav class="container mt-5 mb-5" />
       <Herosection style="margin-top: 40px" />
     </div>
-
     <secsection />
-    <thirdsection />
+    <sec-section />
+    <third-section />
     <fifth-section style="margin-top: 50px; margin-bottom: 100px" />
     <last-section />
   </div>
@@ -19,7 +19,7 @@ const { locale } = useI18n();
 .hero_section {
   position: absolute;
   width: 100%; /* Set the width as needed */
-  height: 852px;
+  height: 890px;
   background: linear-gradient(to right, #2d9596 0%, #3cadae 100%);
   clip-path: ellipse(130% 80% at 35% 0%);
 }

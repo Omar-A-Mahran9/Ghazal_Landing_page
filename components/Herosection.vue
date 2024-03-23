@@ -95,7 +95,7 @@
 @media screen and (max-width: 960px) {
   .main_title {
     font-family: "Janna-Bold";
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 1px;
@@ -120,7 +120,7 @@
   }
 
   #sub-title {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;

@@ -142,13 +142,11 @@ footer {
   height: 100%;
   padding-top: 80px;
   padding-bottom: 20px;
-
   overflow: hidden; /* Ensure the clip path doesn't overflow */
 }
 
 .footer::before {
   overflow: hidden; /* Ensure the clip path doesn't overflow */
-
   content: "";
   position: absolute;
   top: 0;

@@ -1,16 +1,15 @@
 <template>
-  <section class="container">
-    <div
-      class="d-flex flex-column justify-content-center align-items-center w-100 text-center"
-    >
-      <p class="main_title text-dark" style="font-size: 40px">
-        {{ $t("About Gazell") }}
-      </p>
-      <p class="description">{{ $t("description") }}</p>
-    </div>
-
-    <div class="video-container">
-      <div class="play-button" data-video-id="YOUR_VIDEO_ID">
+  <section class="container sec-section">
+    <div class="d-flex flex-column">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center w-100 text-center"
+      >
+        <p class="main_title text-dark" style="font-size: 40px">
+          {{ $t("About Gazell") }}
+        </p>
+        <p class="description">{{ $t("description") }}</p>
+      </div>
+      <div class="play-button" data-video-id="fsKFLZTKNvA?si=OBPFNINVEWNzDXan">
         <div class="thumbnail-overlay"></div>
         <img
           class="thumbnail-image"
@@ -42,12 +41,15 @@ const playVideo = () => {
   const videoId = document
     .querySelector(".play-button")
     .getAttribute("data-video-id");
-  videoUrl.value = `https://www.youtube.com/embed/TCZNX5p6u9g?si=U4d1KTb8SRqcflhf`;
+  videoUrl.value = `https://www.youtube.com/embed/${videoId}`;
   showPlayer.value = true;
 };
 </script>
 
 <style scoped>
+.sec-section {
+  margin-bottom: 100px;
+}
 .description {
   font-size: 20px;
   font-weight: 400;
@@ -98,6 +100,7 @@ const playVideo = () => {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999999;
 }
 .youtube-player iframe {
   border-radius: 24px;
@@ -121,9 +124,9 @@ const playVideo = () => {
 }
 @media screen and (max-width: 959px) {
   .description {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 25px;
     letter-spacing: 0em;
     text-align: center;
     color: #7689a1;
