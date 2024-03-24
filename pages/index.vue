@@ -73,6 +73,7 @@ background-color: #22272e;
   position: absolute;
   width: 100%; /* Set the width as needed */
   height: 890px;
+  top: 0;
   background: linear-gradient(to right, #2d9596 0%, #3cadae 100%);
   clip-path: ellipse(130% 80% at 35% 0%);
 }
