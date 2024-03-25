@@ -5,7 +5,7 @@
         <div class="text_container">
           <span class="sub_title">{{ $t("section3span") }}</span>
           <p class="tiltle">{{ $t("why Ghazell") }}</p>
-          <p class="description" style="color: #888">
+          <p class="description" style="color: #7689A1">
             {{ $t("description2") }}
           </p>
         </div>
@@ -67,7 +67,7 @@
   font-weight: bold;
 }
 .desc-sec {
-  color: #888; /* Use a muted gray color */
+  color: #7689A1; /* Use a muted gray color */
   width: 70%;
 }
 .section-three {

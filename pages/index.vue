@@ -7,15 +7,31 @@
     </div>
     <!-- <secsection /> -->
     <div class="container">
-     <div class="video-container">
-      <div class="overlay" :class="{'d-none':playVideoBtn}"></div>
-      <img @click="playVideoBtn = !playVideoBtn , playVideo()" class="play" src="/images/play.svg" alt="" :class="{'d-none':playVideoBtn}">
-    <iframe v-if="playVideoBtn" :src="videoSrc"
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-      gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <img class="main" :class="{'d-none':playVideoBtn}" src="/images/illustration.svg" alt="">
-     </div>
+      <div class="video-container">
+        <div class="overlay" :class="{ 'd-none': playVideoBtn }"></div>
+        <img
+          @click="(playVideoBtn = !playVideoBtn), playVideo()"
+          class="play"
+          src="/images/play.svg"
+          alt=""
+          :class="{ 'd-none': playVideoBtn }"
+        />
+        <iframe
+          v-if="playVideoBtn"
+          :src="videoSrc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img
+          class="main"
+          :class="{ 'd-none': playVideoBtn }"
+          src="/images/illustration.svg"
+          alt=""
+        />
+      </div>
     </div>
     <sec-section />
     <third-section />
@@ -26,24 +42,26 @@
 <script setup>
 const { locale } = useI18n();
 let playVideoBtn = ref(false);
-const videoSrc = ref('https://www.youtube.com/embed/fsKFLZTKNvA?si=OBPFNINVEWNzDXan?autoplay=1');
-    
-    function playVideo() {
-      videoSrc.value += '&autoplay=1';
-    }
+const videoSrc = ref(
+  "https://www.youtube.com/embed/fsKFLZTKNvA?si=OBPFNINVEWNzDXan?autoplay=1"
+);
+
+function playVideo() {
+  videoSrc.value += "&autoplay=1";
+}
 </script>
 <style>
 /* start video container ( home page ) */
-.video-container{
+.video-container {
   width: 100%;
   height: 500px;
- display: flex;
- align-items: center;
- justify-content: center;
-border-radius: 24px;
-position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  position: relative;
 }
-.video-container .play{
+.video-container .play {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -51,24 +69,26 @@ position: relative;
   z-index: 11;
   cursor: pointer;
 }
-.video-container iframe{
+.video-container iframe {
   width: 100%;
   height: 100%;
-border-radius: 24px;
+  border-radius: 24px;
 }
-.video-container .overlay{
+.video-container .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-border-radius: 24px;
-background-color: #22272e;
+  border-radius: 24px;
+  background-color: #22272e;
   opacity: 0.64;
 }
-.video-container .main{
+.video-container .main {
   width: 40%;
 }
 /* end video container ( home page ) */
-
+* {
+  color: #363f4d;
+}
 .hero_section {
   position: absolute;
   width: 100%; /* Set the width as needed */
@@ -79,6 +99,9 @@ background-color: #22272e;
 }
 .main_section {
   height: 800px;
+}
+footer p {
+  color: white;
 }
 @media screen and (max-width: 959px) {
   .hero_section {

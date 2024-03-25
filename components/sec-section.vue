@@ -108,7 +108,7 @@
 }
 p {
   line-height: 30px;
-  color: #888;
+  color: #7689a1;
 }
 @media screen and (min-width: 992px) and (max-width: 1250px) {
 }
@@ -116,9 +116,9 @@ p {
 }
 @media screen and (max-width: 960px) {
   .description {
-  margin: auto;
-  width: 100%;
-}
+    margin: auto;
+    width: 100%;
+  }
   .main-sec {
     margin-top: 100px;
     height: 577px; /* Adjust based on your design needs */

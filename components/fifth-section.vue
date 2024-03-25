@@ -107,7 +107,7 @@
   margin-top: 140px;
 }
 .description-icons {
-  color: #888;
+  color: #7689a1;
 }
 @media screen and (min-width: 992px) and (max-width: 1250px) {
   .mobile-img {
